@@ -1,0 +1,17 @@
+{
+  "name": "mathesis-teacher",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Teacher app for organizing math lesson videos (YouTube links), hosted on Cloudflare",
+  "scripts": {
+    "setup:local": "wrangler d1 migrations apply mathesis --local",
+    "dev": "wrangler dev",
+    "deploy": "wrangler d1 migrations apply mathesis --remote && wrangler deploy",
+    "test": "node --test test/worker.test.js"
+  },
+  "devDependencies": {
+    "wrangler": "4.166.0"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
