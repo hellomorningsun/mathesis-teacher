@@ -1,0 +1,12 @@
+{
+  "name": "mathesis-teacher",
+  "version": "0.1.0",
+  "description": "Teacher app for uploading and organizing math lesson videos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}
